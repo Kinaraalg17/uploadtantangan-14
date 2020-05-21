@@ -25,8 +25,14 @@
   <form action="/kamar/store" method="post">
   {{ csrf_field() }}
   <div class="form-row">
-    <div class="form-group col-md-6">
-      STATUS *1=Isi *0=Kosong<input type="text" class="form-control" name="STATUS">
+  <div class="form-group col-md-6">
+    <label>PILIHAN</label>
+    <br>
+    <select name="STATUS">
+    <option>--- Choose room From Here ---</option>
+    <option>Single Bed</option>
+    <option>Double Bed</option>    
+    </select>
     </div>
 	<div class="form-group col-md-6">
     KAPASITAS<input type="text" class="form-control" name="KAPASITAS">

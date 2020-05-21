@@ -25,14 +25,13 @@
             NAMA<input type="text" class="form-control" name="NAMA">
           </div>
 	        <div class="form-group col-md-4">
-            JENIS KELAMIN  *1=L *0=P <input type="text" class="form-control" name="JENIS KELAMIN">
-          </div>
-	        <div class="form-group col-md-4">
             NO TELP<input type="text" class="form-control" name="TELP">
           </div>
+          <br>
           <div class="form-group col-md-6">
-            EMAIL<input type="text" class="form-control" name="EMAIL">
+            Password<input type="text" class="form-control" name="PASSWORD">
           </div>
+          <br>
           <div class="form-group col-md-6">
             ALAMAT<input type="text" class="form-control" name="ALAMAT">
           </div>

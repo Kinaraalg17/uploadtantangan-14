@@ -37,7 +37,7 @@
     TANGGAL PEMBAYARAN<input type="hidden" class="form-control" name="TANGGAL" value="{{$pembayaran->TANGGAL_PEMBAYARAN}}"><br>{{$pembayaran->TANGGAL_PEMBAYARAN}}
     </div>
     <div class="form-group">
-    TANGGAL PEMBAYARAN<input type="hidden" class="form-control" name="STATUS" value="{{$pembayaran->STATUS_PEMBAYARAN}}"><br>{{$pembayaran->STATUS_PEMBAYARAN}}
+    PILIHAN PEMBAYARAN<input type="hidden" class="form-control" name="STATUS" value="{{$pembayaran->STATUS_PEMBAYARAN}}"><br>{{$pembayaran->STATUS_PEMBAYARAN}}
     </div>
     <div class="form-group">
     TOTAL PEMBAYARAN<input type="hidden" class="form-control" name="TOTAL" value="{{$pembayaran->TOTAL_PEMBAYARAN}}"><br>{{$pembayaran->TOTAL_PEMBAYARAN}}

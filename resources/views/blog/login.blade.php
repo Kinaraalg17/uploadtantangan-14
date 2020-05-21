@@ -23,10 +23,16 @@
 <form action="/admin2" method="post">
 <div class="form-group">
 {{ csrf_field() }}
-    LOGIN <br> <input type="text" class="form-control" name="ID_ADMIN" ><br>
-    <p>use your ID to Login</p>
+    ID : <br> <input type="text" class="form-control" name="ID_ADMIN" ><br>
+    Password : <br> <input type="password" class="form-control" name="PASSWORD" ><br>
+    <p>use your ID & Password to Login</p>
+    <p> ID = 2 <P> 
+    <p> Password = awdklas </p>
 </div>
 <button type="submit" class="btn btn-primary">login</button>
+<div class="w3-container w3-right">
+		<a class="w3-button w3-black w3-round-xlarge" href="admin1/tambah">register as operator</a>    
+	</div>
   </form>
 </div>
 

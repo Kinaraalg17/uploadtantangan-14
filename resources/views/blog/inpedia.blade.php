@@ -66,8 +66,8 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="operator">operator</a></li>
-        <li><a href="customer">customer</a></li>
+        <li><a href="operator">admin lte</a></li>
+        <li><a href="operatornonlte">operator</a></li>
       </ul>
     </div>
   </div>
@@ -96,8 +96,8 @@
 </style>
 <!-- Second Container -->
 <div class="container-fluid bg-2 text-center">
-<button class="button button4"><a href="/operator" color="white">operator</button>
-<button class="button button4"><a href="/customer" color="white">customer</button>
+<button class="button button4"><a href="/operatornonlte" color="white">operator</button>
+<button class="button button4"><a href="/operator" color="white">adminlte</button>
 </div>
 
 

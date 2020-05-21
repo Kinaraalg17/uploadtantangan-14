@@ -27,23 +27,30 @@ body {
   <br>
   <form action="/datatamu/store" method="post">
   {{ csrf_field() }}
-    <div class="form-row">
-      <div class="form-group col-md-4">
+    <div class="form-group">
+      <div class="form-group">
         NAMA<input type="text" class="form-control" name="NAMA">
       </div>
-  	  <div class="form-group col-md-4">
+  	  <div class="form-group">
         TANGGAL LAHIR<input type="date" class="form-control" name="TANGGAL">
       </div>
-	    <div class="form-group col-md-4">
-        JENIS KELAMIN  *1=L *0=P <input type="text" class="form-control" name="JENISKELAMIN">
-      </div>
-  	  <div class="form-group col-md-4">
+	    	<div class="form-group">
+    <label>JENIS KELAMIN</label>
+    <br>
+    <select name="JENISKELAMIN">
+    <option>--- pilih jenis kelamin ---</option>
+    <option>Laki-Laki</option>
+    <option>Perempuan</option>    
+    </select>
+    </div>
+  	<div class="form-group">
+  	  <div class="form-group">
         NO TELP<input type="text" class="form-control" name="TELP">
       </div>
-  	  <div class="form-group col-md-4">
+  	  <div class="form-group">
         ALAMAT<input type="text" class="form-control" name="ALAMAT">
       </div>
-  	  <div class="form-group col-md-4">
+  	  <div class="form-group">
         KEWARGANEGARAAN<input type="text" class="form-control" name="KEWARGANEGARAAN">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>

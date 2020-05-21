@@ -30,13 +30,10 @@
 				NAMA <input class="form-control" type="text" name="NAMA" value="{{ $p->NAMA_ADMIN }}"> 
 			</div>
 			<div class="form-group col-md-4">
-    			JENIS KELAMIN  *1=L *0=P <input type="text" class="form-control" name="JENIS KELAMIN" value="{{ $p-> GENDER_ADMIN }}">
-    		</div>
-			<div class="form-group col-md-4">
 				NO TELP <input type="text" class="form-control" name="TELP" value="{{ $p->NO_TELP_ADMIN }}">
 			</div>
 			<div class="form-group col-md-6">
-				EMAIL <input type="text" class="form-control" name="EMAIL" value="{{ $p->EMAIL_ADMIN }}">
+				PASSWORD <input type="text" class="form-control" name="PASSWORD" value="{{ $p->PASSWORD }}">
 			</div>
 			<div class="form-group col-md-6">
 				ALAMAT <input type="text" name="ALAMAT" class="form-control" value="{{ $p->ALAMAT_ADMIN }}">

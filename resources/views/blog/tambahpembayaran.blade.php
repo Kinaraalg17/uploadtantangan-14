@@ -29,8 +29,14 @@
     <div class="form-group">
     TANGGAL PEMBAYARAN<input type="date" class="form-control" name="TANGGAL">
     </div>
-    <div class="form-group">
-    STATUS PEMBAYARAN *1=lunas *0=belum<input type="text" class="form-control" name="STATUS">
+    <div class="form-group col-md-6">
+    <label>PILIHAN PEMBAYARAN</label>
+    <br>
+    <select name="STATUS">
+    <option>--- Choose room From Here ---</option>
+    <option>Lunas</option>
+    <option>Cicil</option>    
+    </select>
     </div>
     <div class="form-group">
     TOTAL PEMBAYARAN<input type="text" class="form-control" name="TOTAL">

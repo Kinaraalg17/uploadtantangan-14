@@ -41,14 +41,14 @@
         </head>
         
     <div class="topnav">
-        <a href="blog">home</a>
+        <a href="/">home</a>
         <a href="admin1">data operator</a>
         <a href="datatamu">data tamu</a>
         <a href="kamar">data kamar</a>
         <a href="reservasi">data reservasi</a>
         <a href="pembayaran">data pembayaran</a>
         <a href="detailreservasi">detail reservasi</a>
-        <a href="/logout">Log Out</a>
+        <a href="pointofsales">POS</a>
 
         
         

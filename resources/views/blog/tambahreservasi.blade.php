@@ -25,16 +25,11 @@
   <div class="form-group">
     <div class="form-group">
     NAMA TAMU<input type="hidden" class="form-control" name="JENIS2" value="{{$tamu->ID_TAMU}}"><br>{{$tamu->NAMA_TAMU}}
+    </div>
   {{ csrf_field() }}
-    <div class="form-group">
-    <label>NAMA ADMIN</label>
-    <br>
-    <select name="JENIS">
-    <option>--- Choose room From Here ---</option>
-    @foreach($admin as $k)
-  <option value="{{$k->ID_ADMIN}}">{{$k->NAMA_ADMIN}}</option>
-  @endforeach
-    </select>
+  <br>
+  <div class="form-group">
+    NAMA ADMIN<input type="hidden" class="form-control" name="JENIS" value="{{$admin->ID_ADMIN}}"><br>{{$admin->NAMA_ADMIN}}
     </div>
     <div class="form-group">
     TANGGAL RESERVASI<input type="date" class="form-control" name="TANGGAL_RESERVASI">

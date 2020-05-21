@@ -11,7 +11,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 <div class="container">
   <h2>Data Reservasi</h2>
 	<small class="text-muted">Hotel Inpedia Indonesia</small>
@@ -21,7 +20,7 @@
 		<div class="col-3">
 			<form action="/reservasi/cari" method="GET">
 				<div class="input-group">
-					<input class="form-control" name="cari" type="text" placeholder="Masukkan ID Tamu..." value="{{ old('cari') }}">
+					<input class="form-control" name="cari" type="text" placeholder="Masukkan Tanggal Checkin" value="{{ old('cari') }}">
 					<div class="input-group-append">
 						<input class="btn btn-info" type="submit" value="Cari">
 					</div>
@@ -67,12 +66,8 @@
 		@endforeach
     </tbody>
   </table>
-  <table class="table">
-    <thead class="thead-light">
-     
-    </tbody>
-  </table>
 </div>
+<p> TOTAL KAMAR : 50 Kamar </p>
 
 </body>
 </html>

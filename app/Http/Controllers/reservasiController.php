@@ -14,13 +14,13 @@ class reservasiController extends Controller
         $reservasi = DB::table('reservasi')->paginate(15);
         $admin = DB::table('admin')->get();
         $tamu = DB::table('tamu')->get();
-        return view('/blog/reservasi',['reservasi' => $reservasi ],['admin' => $admin],['tamu'=> $tamu,]);
+        return view('/blog/reservasi',['reservasi' => $reservasi ],['admin' => $admin],['tamu'=> $tamu]);
 
  
     }
     
     public function tambah(){
-        $admin = DB::table('admin')->get();
+        $admin = DB::table('admin')->latest("ID_ADMIN")->first();
         $tamu = DB::table('tamu')->latest("ID_TAMU")->first();
         return view('/blog/tambahreservasi',['admin' => $admin, 'tamu'=> $tamu]);
     }
@@ -66,7 +66,7 @@ public function cari(Request $request)
 	{
 		$cari = $request->cari;
 		$reservasi = DB::table('reservasi')
-		->where('ID_TAMU','like',"%".$cari."%")
+		->where('TANGGAL_CHECKIN','like',"%".$cari."%")
 		->paginate();
 		return view('/blog/reservasi',['reservasi' => $reservasi]);
 

@@ -37,11 +37,7 @@
 	@foreach($kamar as $p)
 		<tr>
 			<td>{{ $p->ID_KAMAR }}</td>
-			@if($p->STATUS_KAMAR == 1)
-				            <td>Terisi</td>
-			            @else
-				            <td>Kosong</td>
-			            @endif
+			<td>{{ $p->STATUS_KAMAR }}</td>
 			<td>{{ $p->KAPASITAS_KAMAR }}</td>
 			<td>{{ $p->JENIS_KAMAR }}</td>
 			<td>{{ $p->HARGA_KAMAR }}</td>

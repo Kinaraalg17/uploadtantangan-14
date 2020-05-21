@@ -1,15 +1,22 @@
 <?php
  
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/blog','BlogController@halamanutama');
+
+Route::get('/','BlogController@halamanutama');
 Route::get('/login','BlogController@login');
+Route::get('/admin2/tambah','BlogController@tambah');
+Route::post('/admin2/store','BlogController@store');
 Route::post('/admin2','BlogController@admin2');
-Route::get('/blog','BlogController@halamanutama');
 Route::get('/operator','BlogController@halamanoperator');
+Route::get('/pointofsales','BlogController@halamanPOS');
+Route::get('/report','BlogController@report');
+Route::get('/report_pdf', 'BlogController@report_pdf');
+Route::get('/roomlist','BlogController@roomlist');
 Route::get('logout','BlogController@logout');
-Route::get('/customer','BlogController@halamanpelanggan');
+Route::get('/operatornonlte','BlogController@halamanpelanggan');
+Route::get('/upload', 'UploadController@upload');
+Route::get('/download', 'UploadController@downloadtampilan');
+Route::post('/upload/proses', 'uploadController@proses');
+Route::get('/download/{file}', 'uploadController@download');
 
 Route::get('/admin1','adminController@show');
 Route::get('/admin1/tambah','adminController@tambah');
@@ -70,5 +77,14 @@ Route::get('/tunai/hapus/{id}','tunaiController@hapus');
 Route::get('/detailreservasi','detailreservasiController@tambah3');
 Route::get('/detailreservasi/tambah','detailreservasiController@tambah');
 Route::post('/detailreservasi/store','detailreservasiController@store');
+Route::get('/detailreservasi/cetak_pdf', 'detailreservasiController@cetak_pdf');
+Route::get('/detailreservasi/edittamu/{ID}','detailreservasiController@edittamu');
+Route::post('/detailreservasi/update','detailreservasiController@update');
+Route::get('/detailreservasi/editreservasi/{ID}','detailreservasiController@editreservasi');
+Route::post('/detailreservasi/updatereservasi','detailreservasiController@updatereservasi');
+Route::get('/detailreservasi/editkamar/{ID}','detailreservasiController@editkamar');
+Route::post('/detailreservasi/updatekamar','detailreservasiController@updatekamar');
+Route::get('/detailreservasi/editpembayaran/{ID}','detailreservasiController@editpembayaran');
+Route::post('/detailreservasi/updatepembayaran','detailreservasiController@updatepembayaran');
 
 

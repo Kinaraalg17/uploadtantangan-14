@@ -32,7 +32,7 @@ class tamuController extends Controller
         'ALAMAT_TAMU' => $request->ALAMAT,
         'KEWARGANEGARAAN' => $request->KEWARGANEGARAAN
 	]);
-    return redirect('/reservasi/tambah');
+    return redirect('/kamar/tambah');
     
  
 }

@@ -29,8 +29,8 @@ class adminController extends Controller
 		'NAMA_ADMIN' => $request->NAMA,
 		'ALAMAT_ADMIN' => $request->ALAMAT,
         'NO_TELP_ADMIN' => $request->TELP,
-		'EMAIL_ADMIN' => $request->EMAIL,
-		'GENDER_ADMIN' => $request->JENIS_KELAMIN
+		'PASSWORD' => $request->PASSWORD,
+
 	]);
     return redirect('/admin1');
     
@@ -51,8 +51,8 @@ public function update(Request $request)
 		'NAMA_ADMIN' => $request->NAMA,
 		'ALAMAT_ADMIN' => $request->ALAMAT,
         'NO_TELP_ADMIN' => $request->TELP,
-		'EMAIL_ADMIN' => $request->EMAIL,
-		'GENDER_ADMIN' => $request->JENIS_KELAMIN
+		'PASSWORD' => $request->PASSWORD,
+
 	]);
 	return redirect('/admin1');
 }

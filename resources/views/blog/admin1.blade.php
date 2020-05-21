@@ -39,8 +39,8 @@
 			<th>NAMA</th>
 			<th>ALAMAT</th>
 			<th>NO TELP</th>
-			<th>EMAIL</th>
-			<th>JENIS KELAMIN</th>
+			<th>PASSWORD</th>
+
 			<th>function</th>
       	</tr>
     </thead>
@@ -51,15 +51,13 @@
 			<td>{{ $p->NAMA_ADMIN }}</td>
 			<td>{{ $p->ALAMAT_ADMIN }}</td>
 			<td>{{ $p->NO_TELP_ADMIN }}</td>
-			<td>{{ $p->EMAIL_ADMIN }}</td>
-			@if($p->GENDER_ADMIN == 1)
-				            <td>Laki-Laki</td>
-			            @else
-				            <td>Perempuan</td>
-			            @endif
+			<td>{{ $p->PASSWORD }}</td>
+
+			
 			<td>
 			<a href="/admin1/edit/{{ $p->ID_ADMIN }}">Edit</a>
 			<a href="/admin1/hapus/{{ $p->ID_ADMIN }}">Hapus</a>
+			</td>
 		</tr>
 		@endforeach
     </tbody>
